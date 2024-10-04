@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clara Martinez - Fotógrafa</title>
+    <style>
+        body {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #434343;
+            color: #ffffff;
+        }
+
+        header {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-image: url(logo.PNG);
+            background-color: #ffffff;
+            color: #000000;
+            padding: 20px;
+            text-align:right;
+            background-repeat: no-repeat;
+
+        }
+
+        header h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        nav {
+            margin-top: 20px;
+            text-align: center;
+            text-align: center;
+            padding: 10px;
+            background-color: #000000;
+        }
+
+        nav a {
+            color: #ff0101c1;
+            text-decoration: none;
+            padding: 15px;
+            font-size: 1.2rem;
+        }
+
+        nav a:hover {
+            color: #c72512;
+
+        }
+
+        .about,
+        .portfolio,
+        .contact {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .about img {
+            float: left;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .about h2,
+        .portfolio h2,
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #e74c3c;
+        }
+
+        .portfolio img {
+            width: 30%;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact input,
+        .contact textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact button {
+            padding: 15px;
+            background-color: #b72a1b;
+            color: rgb(0, 0, 0);
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background-color: #ff1e00;
+        }
+
+        footer {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Clara Martinez</h1>
+        <p>Fotógrafa de Casamentos e Eventos</p>
+    </header>
+
+    <nav>
+        <a href="#about">Sobre Mim</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contact">Contato</a>
+    </nav>
+
+    <!-- Seção Sobre Mim -->
+    <section class="about" id="about">
+        <h2>Sobre Mim</h2>
+        <img src="pose-para-fotos-femininas.webp" alt="Clara Martinez" width="300">
+        <p>Sou Clara Martinez, uma fotógrafa apaixonada por capturar momentos especiais e emoções autênticas. Com mais
+            de 10 anos de experiência, especializo-me em fotografia de casamentos e eventos. Cada foto que tiro conta
+            uma história, e acredito que as melhores imagens são aquelas que refletem a verdadeira essência das pessoas.
+        </p>
+        <p>Até agora, dependi de redes sociais e recomendações, mas criei este site para compartilhar meu portfólio e
+            atrair novos clientes. Navegue pelo site e entre em contato para discutirmos como posso registrar seus
+            momentos mais importantes.</p>
+    </section>
+
+    <!-- Seção Portfólio -->
+    <section class="portfolio" id="portfolio">
+        <h2>Portfólio</h2>
+        <img src="eventos1 (5).jpg" alt="Casamento 1">
+        <img src="eventos1 (1).jpg" alt="Evento Corporativo">
+        <img src="eventos1 (6).jpg" alt="Casamento 2">
+        <img src="eventos1 (2).jpg" alt="Evento Corporativo 2">
+        <img src="eventos1 (7).jpg" alt="Casamento 3">
+        <img src="eventos1 (3).jpg" alt="Evento Corporativo 3">
+    </section>
+
+    <!-- Seção Contato -->
+    <section class="contact" id="contact">
+        <h2>Contato</h2>
+        <form action="fotografa.php" method="post">
+            <input type="text" name="nome" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Clara Martinez Fotografia. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
